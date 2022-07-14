@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/de607de89d.js" crossorigin="anonymous"></script>
-	<title>Document</title>
+	<title>Gotham</title>
 </head>
 <body>
 	
 	<header class="page-header">
 		<div class="wrapper">
+			<button class="nav-toggle">
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+			</button>
 		<nav class="left-nav">
 			<ul>
 				<li><a href="#">culture</a></li>
@@ -19,7 +24,7 @@
 			</ul>
 		</nav>
 		<div class="header-logo">
-			<img src="images/logo2.png" alt="logo">
+			<img src="images/logo.png" alt="logo">
 		</div>
 		<nav class="right-nav">
 			<ul>
@@ -38,8 +43,12 @@
 				<div class="articles">
 					<article>
 						<div class="article-left">
-							<img src="images/article-1.jpg" alt="art image">
+							<picture>
+								<source type="image/webp" srcset="images/article-1.webp, images/article-1-1.5x.webp 1.5x, images/article-1-2x.webp 2x">
+									<img srcset="images/article-1.jpg, images/article-1.jpg, images/article-1-1.5x.jpg 1.5x, images/article-1-2x.jpg 2x">
+							</picture>
 						</div>
+						
 						<div class="article-right">
 							<h3>5 Standout Things to Know About the 2033 Cannes Film Festival</h3>
 							
@@ -142,6 +151,7 @@
 						</div>
 					</article>
 				</div>
+				
 				<button class="more">More articles</button>
 			</main>
 			<aside class="right-sidebar">
@@ -264,5 +274,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src= "script.js" type="text/javascript"></script>
 </body>
 </html>
